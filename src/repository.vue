@@ -60,7 +60,9 @@
         methods: {
             getRepository(){
                 let params = {
-                    sort: 'updated'
+                    params: {
+                        sort: 'updated'
+                    }
                 }
                 this.axios.get(api.repo_list, params)
                     .then(response => {
